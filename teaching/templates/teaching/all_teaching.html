@@ -1,0 +1,31 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<br>
+<h2>Teaching experience</h2>
+<br>
+<h4>UT Austin, Teaching Assistant</h4>
+<h6>Human Behavior as Rational Action</h6>
+<h6>Data Science for the Social World</h6>
+<h6>Statistical Analysis in Political Science</h6>
+<h6>Research Methods in Government</h6>
+<h6>American Government</h6>
+
+<br>
+<h4>ICPSR, Teaching Assistant</h4>
+<h6>Bayesian Models for the Social Sciences: Introdiction and Application</h6>
+<h6>Bayesian Models for the Social Sciences: Advanced Topics</h6>
+
+
+<br>
+<br>
+<br>
+{% for teaching in teachings %}
+
+<img src="{{ teaching.image.url }}" height="150" width="260">
+
+{% endfor %}
+<br>
+<br>
+<br>
+{% endblock %}

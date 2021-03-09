@@ -1,0 +1,27 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+
+<br>
+<h1>Welcome</h1>
+<div class="row justify-content-center my-3">
+    <div class="col-5">
+        <img src="{% static 'portfolio/photo.jpg' %}" class="img-fluid">
+    </div>
+</div>
+
+<br>
+<div class="row justify-content-center mb-3">
+    <div class="col-md-9 text-left">
+        <h5 id="hometext" class="font-weight-normal">Greetings! I am a PhD candidate in the Government Department at the University of Texas at Austin. I specialize in Comparative Politics and Political Methodology. My substantive research agenda focuses on contentious politics and politics in East Asia. My methodological research develops and employs game-theoretical and experimental methods to the study of contentious politics. During my studies at UT Austin, I have been working as a teaching assistant for various Statistics and Data Science courses.<br><br>
+            Apart from research and teaching, I enjoy playing and listening to music, especially classical music. I also like travelling and discovering the beauty of mother nature.<br><br>
+            You may contact me via email: theodorecharm@utexas.edu
+        </h5>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+{% endblock %}

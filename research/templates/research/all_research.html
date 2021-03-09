@@ -1,0 +1,34 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<br>
+<h2>Dissertation</h2>
+Why do people protest? In my dissertation, I address this question from three perspectives: Post-materialism, collective action, and strategic interaction between the government and civil society.
+Motivated by the recent Anti-Extradition Law Movement, I examine the underlying factors that drive ordinary Hong Kong people to protest. I also explore how information and beliefs influence the actions of the government and protesters.
+My dissertation committee includes Tse-min Lin (Chair), Robert Luskin, Brian Roberts, and Cara J Wong.
+
+<h2 class="mt-5">Works in Progress</h2>
+<hr>
+
+<div class="row">
+    {% for research in researchs %}
+    <div class="col-lg-6 col-md-6">
+
+        {% if research.url %}
+        <a href="{{ research.url }}">
+            <img src="{{ research.image.url }}" height="250" width="500">
+        </a>
+        {% else %}
+
+        <img src="{{ research.image.url }}" height="150" width="260">
+        {% endif %}
+        <h5>{{ research.title }}</h5>
+        <p>{{ research.description }}</p>
+
+    </div>
+    {% endfor %}
+</div>
+
+<br>
+<br>
+{% endblock %}
